@@ -1,0 +1,169 @@
+html,
+body {
+  background-color: rgb(13, 17, 23);
+  color: fff;
+  font-family: sans-serif;
+  min-width: 280px;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: rgb(240, 246, 252);
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  border-bottom: 1px solid #4c6b84;
+}
+
+#navbar ol {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: rgb(240, 246, 252);
+  border-top: 1px solid #4c6b84;
+  /* list-style: none; */
+  position: relative;
+  margin-left: 30px;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 5px;
+  color: rgb(240, 246, 252);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 15px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: rgb(240, 246, 252);
+  margin: 15px;
+  font-size: 0.96em;
+  max-width: 95%;
+}
+
+section li {
+  margin: 15px 0px 0px 10px;
+}
+
+code {
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  /* line-height: 2; */
+  background-color: rgb(52, 57, 66);
+  padding: 2px;
+  /* margin: 10px; */
+  border-radius: 3px;
+}
+
+code > a {
+  color: rgb(83, 157, 242);
+  text-decoration: none;
+}
+
+a {
+  color: rgb(83, 157, 242);
+  text-decoration: none;
+}
+
+.code-block {
+  display: block;
+  max-width: 95%;
+}
+
+blockquote {
+  display: block;
+  margin-left: 50px;
+  padding-left: 20px;
+  border-left: 2px solid #30363d;
+  color: #4c6b84;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ol {
+    border-bottom: 1px solid #4c6b84;
+    height: 207px;
+  }
+
+  #navbar header {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  #navbar {
+    background-color: rgb(13, 17, 23);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 230px;
+    height: 230px;
+    border: none;
+    z-index: 1;
+    /* border-bottom: 2px solid; */
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  section li {
+    margin-left: -20px;
+  }
+
+  code {
+    /* margin-left: -20px; */
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .code-block {
+    margin-left: 20px;
+  }
+
+  blockquote {
+    margin-left: 20px;
+  }
+}
